@@ -58,3 +58,10 @@ p {
         height: 50vh;
     }
 }
+@media(min-width: 900px) {
+    .nested-flip {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+    }
+}
