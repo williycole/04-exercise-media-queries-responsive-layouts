@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    height: 100vh;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+}
+
+.green, .pink, .blue, .head-foot {
+    height: 25vh;
+}
+
+.green{
+    background-color: lightgreen;
+}
+
+.pink {
+    background-color: hotpink;
+}
+
+.blue {
+    background-color: lightskyblue;
+    flex-grow: 1;
+}
+
+.head-foot {
+    background-color: yellow;
+    font-size: 4em;
+}
+
+@media(min-width: 400px) {
+    .no-flip {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nested-flip {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    .flip {
+        display: flex;
+        flex-grow: 1;
+    }
+    .blue {
+        background-color: lightskyblue;
+        flex-grow: 1;
+        height: 50vh;
+    }
+}
